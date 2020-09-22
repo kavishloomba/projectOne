@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    
+    <style>
+        
+        
+        a {
+            margin-left:50px;
+            margin-top: 10px;
+        }
+
+
+        .container {
+            display:flex;
+            flex-wrap: wrap;
+            height: 747px;
+            width: 1200px;
+            background-image: image()
+        }
+
+        .button {
+            background: url('https://res.cloudinary.com/kavish/image/upload/v1600726208/thi0sgl0m7d3qyd7khe9.jpg');
+            background-size: cover;
+            background-position: center;
+            width: 200px;
+            height: 200px;
+            border-radius: 3px;
+            border: 6px solid black;
+            margin: 20px 20px;
+        }
+        
+        .button:hover{
+            background: cross-fade(url('https://res.cloudinary.com/kavish/image/upload/v1600727133/file-20200730-27-xlocql.jpg_s7lae6.jpg')) no-repeat;
+        }
+
+
+    </style>
+
+
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <nav class="ui three item menu">
+
+        <a href="index.html">&#9064;</a>
+        <a href="pageTwo.html">&#8981;</a>
+        <a href="pageThree.html">&#8966;</a>
+
+    </nav>
+
+    <div class="container">
+        <div class="button" onclick="playsound(sound0)"></div>
+        <div class="button" onclick="playsound(sound1)"></div>
+        <div class="button" onclick="playsound(sound2)"></div>
+        <div class="button" onclick="playsound(sound3)"></div>
+        <div class="button" onclick="playsound(sound0)"></div>
+        <div class="button" onclick="playsound(sound1)"></div>
+        <div class="button" onclick="playsound(sound2)"></div>
+        <div class="button" onclick="playsound(sound3)"></div>
+        <div class="button" onclick="playsound(sound0)"></div>
+        <div class="button" onclick="playsound(sound1)"></div>
+        <div class="button" onclick="playsound(sound2)"></div>
+        <div class="button" onclick="playsound(sound3)"></div>
+     </div>
+
+</body>
+
+
+<script>
+
+    const sound0 = new Howl({ src: 'sounds/0.mp3' });
+    const sound1 = new Howl({ src: 'sounds/1.mp3' });
+    const sound2 = new Howl({ src: 'sounds/2.mp3' });
+    const sound3 = new Howl({ src: 'sounds/3.mp3' });
+    
+    const playsound = (sound) => {
+    
+        sound.play();
+    }
+    
+</script>
+
+
+
+
+
+
+
+
+</html>
